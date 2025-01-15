@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use("/", registroDecisaoRoutes);
+app.use("/api", registroDecisaoRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
